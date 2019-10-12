@@ -1,9 +1,9 @@
 ## SumOfSounds
 
 Members of the Team
-Kasymbek Tashbaev
-Bilal Siraj
-Aliyu Saifullah Vandana
+*Kasymbek Tashbaev
+*Bilal Siraj
+*Aliyu Saifullah Vandana
 
 ### Project Description
 
