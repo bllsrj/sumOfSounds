@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## SumOfSounds
 
-You can use the [editor on GitHub](https://github.com/bilalsiraj/sumOfSounds/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Members of the Team
+Kasymbek Tashbaev
+Bilal Siraj
+Aliyu Saifullah Vandana
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Project Description
 
-### Markdown
+There is a lot of text to speech applications on the market now such as an Intelligent Speaker- extension for a browser that reads books, articles, docs and pdf files in an almost human voice. Almost all of such text-to-speech applications have trouble with voicing the formulas, especially mathematical formulas. Therefore, we decided to write an application that could identify the formulas in a text and voice them. Considering that there are various formulas in the scientific world, we decided to focus our application more on voicing LateX formulas which is a high-quality document preparation system, especially for scientific documents.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bilalsiraj/sumOfSounds/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Who will use it?
+This application will prove beneficial to the scientific community especially blind professors, students, and research scientists. Below is an example of a potential user sharing his plight online.
