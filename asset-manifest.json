@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sumOfSounds/static/css/main.ba152265.chunk.css",
-    "main.js": "/sumOfSounds/static/js/main.b4664c5f.chunk.js",
-    "main.js.map": "/sumOfSounds/static/js/main.b4664c5f.chunk.js.map",
+    "main.js": "/sumOfSounds/static/js/main.106f8db0.chunk.js",
+    "main.js.map": "/sumOfSounds/static/js/main.106f8db0.chunk.js.map",
     "runtime-main.js": "/sumOfSounds/static/js/runtime-main.2d7339ec.js",
     "runtime-main.js.map": "/sumOfSounds/static/js/runtime-main.2d7339ec.js.map",
     "static/css/2.ff97ee80.chunk.css": "/sumOfSounds/static/css/2.ff97ee80.chunk.css",
-    "static/js/2.c558f17b.chunk.js": "/sumOfSounds/static/js/2.c558f17b.chunk.js",
-    "static/js/2.c558f17b.chunk.js.map": "/sumOfSounds/static/js/2.c558f17b.chunk.js.map",
+    "static/js/2.5ccc7a32.chunk.js": "/sumOfSounds/static/js/2.5ccc7a32.chunk.js",
+    "static/js/2.5ccc7a32.chunk.js.map": "/sumOfSounds/static/js/2.5ccc7a32.chunk.js.map",
     "index.html": "/sumOfSounds/index.html",
-    "precache-manifest.aa480f7635a025ae2f545b316b81ca30.js": "/sumOfSounds/precache-manifest.aa480f7635a025ae2f545b316b81ca30.js",
+    "precache-manifest.5b423247023d726a11a123b84e62fc65.js": "/sumOfSounds/precache-manifest.5b423247023d726a11a123b84e62fc65.js",
     "service-worker.js": "/sumOfSounds/service-worker.js",
     "static/css/2.ff97ee80.chunk.css.map": "/sumOfSounds/static/css/2.ff97ee80.chunk.css.map",
     "static/css/main.ba152265.chunk.css.map": "/sumOfSounds/static/css/main.ba152265.chunk.css.map",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.2d7339ec.js",
     "static/css/2.ff97ee80.chunk.css",
-    "static/js/2.c558f17b.chunk.js",
+    "static/js/2.5ccc7a32.chunk.js",
     "static/css/main.ba152265.chunk.css",
-    "static/js/main.b4664c5f.chunk.js"
+    "static/js/main.106f8db0.chunk.js"
   ]
 }
