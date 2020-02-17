@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "894ad74dc23a8ef86c08273335820da7",
+    "revision": "f7190b1c0f3ad01e940de713df3be019",
     "url": "/sumOfSounds/index.html"
   },
   {
-    "revision": "fba11e7246c656f8eeee",
-    "url": "/sumOfSounds/static/css/2.cc61e654.chunk.css"
+    "revision": "ff893282afe5ca111a50",
+    "url": "/sumOfSounds/static/css/2.ff97ee80.chunk.css"
   },
   {
-    "revision": "29cc3703fda962fbe724",
-    "url": "/sumOfSounds/static/css/main.8397be7a.chunk.css"
+    "revision": "efd14d3d864795981ff9",
+    "url": "/sumOfSounds/static/css/main.ba152265.chunk.css"
   },
   {
-    "revision": "fba11e7246c656f8eeee",
-    "url": "/sumOfSounds/static/js/2.e3f8c0cb.chunk.js"
+    "revision": "ff893282afe5ca111a50",
+    "url": "/sumOfSounds/static/js/2.c558f17b.chunk.js"
   },
   {
-    "revision": "29cc3703fda962fbe724",
-    "url": "/sumOfSounds/static/js/main.5365d93a.chunk.js"
+    "revision": "efd14d3d864795981ff9",
+    "url": "/sumOfSounds/static/js/main.b4664c5f.chunk.js"
   },
   {
-    "revision": "75bc6ec3e6356bb534d2",
-    "url": "/sumOfSounds/static/js/runtime-main.26d5b420.js"
+    "revision": "0a5aa196db1d08f93693",
+    "url": "/sumOfSounds/static/js/runtime-main.2d7339ec.js"
   },
   {
-    "revision": "7e8adcf82809a60b2498cdcac6918d03",
-    "url": "/sumOfSounds/static/media/analysis.7e8adcf8.png"
+    "revision": "7e426827dd3b4bca5aaf6c1051545664",
+    "url": "/sumOfSounds/static/media/analysis.7e426827.png"
   },
   {
-    "revision": "5991e4f62a800164d01b642cdf4fa454",
-    "url": "/sumOfSounds/static/media/avatar.5991e4f6.jpg"
+    "revision": "8eb16382efadb072018fdfb44664c4f1",
+    "url": "/sumOfSounds/static/media/avatar.8eb16382.jpg"
   },
   {
     "revision": "45055006cf425793942f654eb0a84649",
     "url": "/sumOfSounds/static/media/avatar2.45055006.jpeg"
   },
   {
-    "revision": "1896b75ef1eeb8c2b06dec6665926da7",
-    "url": "/sumOfSounds/static/media/avatar3.1896b75e.jpg"
+    "revision": "5d2bc2f746bb3bef8410d55f934c8264",
+    "url": "/sumOfSounds/static/media/avatar3.5d2bc2f7.jpg"
   },
   {
     "revision": "48d97c0eac077cd0d6959757dd93ac50",
@@ -90,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/sumOfSounds/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "5fac8871151b73f489e064041a80b537",
+    "url": "/sumOfSounds/static/media/low.5fac8871.png"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
