@@ -1,0 +1,189 @@
+.header-text {
+    margin-left: 0;
+    font-size: 36px !important;
+    font-family: cursive !important;
+    padding: 0;
+    font-weight: bold !important;
+}
+
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ui.menu {
+    border: 0 none !important;
+    box-shadow: none;
+}
+
+.ui.modal,
+.ui.active.modal {
+    height: 300px;
+    margin: 0 auto!important;
+    top: 25% !important;
+    left: auto !important;
+    transform-origin: center !important;
+    transition: all ease .5s;
+}
+
+.c9-menu-text {
+    font-size: 15px;
+    font-weight: 700 !important;
+    color: #282c34 !important;
+}
+
+.c9-mid-size-image {
+    height: 360px;
+    width: 360px;
+}
+
+.c9-center-text {
+    text-align: center;
+    margin-top: 4px;
+}
+
+.center-img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+    height: auto !important;
+    max-width: 640px !important;
+    max-height: 480px !important;
+}
+
+.c9-text-cool {
+    font-family: 'Trocchi', serif;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+}
+
+.c9-text-cool-small {
+    font-family: 'Trocchi', serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.c9-text-middle {
+    font-family: 'Trocchi', serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+}
+
+.c9-text-big {
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    margin: 4px !important;
+}
+
+.c9-text-600 {
+    font-weight: 600 !important;
+}
+
+.c9-text-title {
+    font-weight: 900 !important;
+    font-size: 125px !important;
+    font-family: Georgia, serif;
+    margin-top: 175px;
+    margin-bottom: 125px;
+    color: white !important;
+    text-shadow: -2px 0 #64b2cd, 0 2px #64b2cd, 2px 0 #64b2cd, 0 -2px #64b2cd;
+}
+
+.c9-text-sub-title {
+    font-weight: 900 !important;
+    font-size: 55px !important;
+    font-family: Georgia, serif;
+    margin-bottom: 50px;
+    color: white !important;
+    text-shadow: -1px 0 #64b2cd, 0 1px #64b2cd, 1px 0 #64b2cd, 0 -1px #64b2cd;
+}
+
+.c9-btn {
+    margin: 65px 2% 205px 2% !important;
+    width: 20% !important;
+    color: #3c70a4 !important;
+    background-color: #d9eeec !important;
+    font-size: 28px  !important;
+    font-weight: 900  !important;
+    text-align: center;
+}
+
+.div-margin{
+    margin: 45px !important;
+}
+
+h1 {
+    font-size: 36px  !important;
+    font-weight: 900  !important;
+    text-align: center;
+}
+
+h2 {
+    font-size:25px  !important;
+    font-weight: 900  !important;
+    text-align: center;
+}
+
+.c9-link, .c9-link:hover {
+    color: blue;
+}
+
+.c9-link:hover{
+    cursor: pointer;
+}
+
+.cursor:hover{
+    cursor: pointer;
+}
+
+.c9-text-png{
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.c9-header {
+    padding-right: 50%;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    color: blue;
+}
