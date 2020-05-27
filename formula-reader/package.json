@@ -1,0 +1,40 @@
+{
+  "name": "sum-of-sounds",
+  "version": "1.0.0",
+  "description": "Voices the formulas",
+  "main": "./client/src/App.js",
+  "author": "tkas9mbek <kasymbek.rustambekovich@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": "12.10.0",
+    "yarn": "1.17.3"
+  },
+  "keywords": [
+    "sum of sounds",
+    "heroku"
+  ],
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "set GOOGLE_APPLICATION_CREDENTIALS=%cd%\\auth\\SumOfSounds-a3bf5c0a2814.json&& concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^2.3.0",
+    "base64-image-encoder": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "filereader": "^0.10.3",
+    "fs": "^0.0.1-security",
+    "gm": "^1.23.1",
+    "multer": "^1.4.2",
+    "pdf-transform": "^1.0.2",
+    "pdf2pic": "^1.4.0",
+    "request": "^2.88.2",
+    "rimraf": "^3.0.2"
+  }
+}

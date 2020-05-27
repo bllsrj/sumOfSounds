@@ -1,0 +1,289 @@
+{
+  "fraction": {
+    "layers": 1,
+    "latex": "\\frac",
+    "text": "prm0 OVER prm1",
+    "prms": 2,
+    "add_bracket": true,
+    "separation": [["{", "}", 1, "{", "}", 1]]
+  },
+  "underset": {
+    "layers": 1,
+    "latex": "\\underset",
+    "text": "prm0 UNDER prm1",
+    "prms": 2,
+    "add_bracket": true,
+    "separation": [["{", "}", 1, "{", "}", 1]]
+  },
+  "binomial": {
+    "layers": 2,
+    "latex": "\\binom",
+    "text": "BINOMIAL prm0 CHOOSE prm1",
+    "prms": 2,
+    "add_bracket": false,
+    "separation": [["{", "}", 1, "{", "}", 1]]
+  },
+  "ln": {
+    "layers": 1,
+    "latex": "\\ln",
+    "text": "NATURAL LOGARITHM OF prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [[" ", " ", 1]]
+  },
+  "prob": {
+    "layers": 1,
+    "latex": "\\P",
+    "text": "PROBABILITY OF prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["(", ")", 1]]
+  },
+  "sqrt": {
+    "layers": 1,
+    "latex": "\\sqrt",
+    "text": "SQUARE ROOT OF prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "longdiv": {
+    "layers": 1,
+    "latex": "\\longdiv",
+    "text": "LONG DIVISION OF prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "root": {
+    "layers": 1,
+    "latex": "\\sqrt",
+    "text": "ROOT BASE prm0 OF prm1",
+    "prms": 2,
+    "add_bracket": true,
+    "separation": [["[", "]", 1, "{", "}", 1]]
+  },
+  "pipe": {
+    "layers": 1,
+    "latex": "|",
+    "text": "OPEN PIPE prm0 CLOSE PIPE",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["", "|", 1]]
+  },
+  "dpipe": {
+    "layers": 1,
+    "latex": "\\|",
+    "text": "OPEN DOUBLE PIPE prm0 CLOSE DOUBLE PIPE",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["", "\\|", 1]]
+  },
+  "overline": {
+    "layers": 1,
+    "latex": "\\overline",
+    "text": "OVERLINE prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "underline": {
+    "layers": 1,
+    "latex": "\\underline",
+    "text": "UNDERLINE prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "under-brace": {
+    "layers": 1,
+    "latex": "\\underbrace",
+    "text": "under-brace UNDER prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "widehat": {
+    "layers": 1,
+    "latex": "\\widehat",
+    "text": "HAT OVER prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "widetilde": {
+    "layers": 1,
+    "latex": "\\widetilde",
+    "text": "TILDE OVER prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "overrightarrow": {
+    "layers": 1,
+    "latex": "\\overrightarrow",
+    "text": "OVER RIGHT ARROW prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "overleftarrow": {
+    "layers": 1,
+    "latex": "\\overleftarrow",
+    "text": "OVER LEFT ARROW prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "overbrace": {
+    "layers": 1,
+    "latex": "\\overbrace",
+    "text": "BRACE OVER prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "underbrace": {
+    "layers": 1,
+    "latex": "\\underbrace",
+    "text": "BRACE UNDER prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [["{", "}", 1]]
+  },
+  "display": {
+    "layers": 1,
+    "latex": "\\mathrm",
+    "text": "prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "set": {
+    "layers": 1,
+    "latex": "\\mathbb",
+    "text": "\\prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "text": {
+    "layers": 1,
+    "latex": "\\textrm",
+    "text": "prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "text2": {
+    "layers": 1,
+    "latex": "\\text",
+    "text": "prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "$": {
+    "layers": 1,
+    "latex": "$",
+    "text": "START MATH EXPRESSION prm0 END MATH EXPRESSION",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["", "$", 1]]
+  },
+  "begin2": {
+    "layers": 1,
+    "latex": "\\begin",
+    "text": "START prm0",
+    "prms": 2,
+    "add_bracket": false,
+    "separation": [["{", "}", 1, "{", "}", 1]]
+  },
+    "begin": {
+    "layers": 1,
+    "latex": "\\begin",
+    "text": "START prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "end2": {
+    "layers": 1,
+    "latex": "\\end",
+    "text": "CLOSE prm0",
+    "prms": 2,
+    "add_bracket": false,
+    "separation": [["{", "}", 1, "{", "}", 1]]
+  },
+    "end": {
+    "layers": 1,
+    "latex": "\\end",
+    "text": "CLOSE prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "sub": {
+    "layers": 2,
+    "preLatex": ["\\sum", "\\prod", "\\cup", "\\cap", "\\coprod", "\\int", "\\iint", "\\iiint", "\\iiiint", "\\idotsint", "\\oint", "\\oiint"],
+    "preText": ["sum", "product", "union", "intersection", "coproduct", "integral", "double integral", "triple integral", "quadruple integral", "integral dots integral", "curve integral", "curve double integral"],
+    "latex": "_",
+    "text": "FROM prm0 TO prm1 OF",
+    "prms": 2,
+    "add_bracket": false,
+    "separation": [
+      ["{", "}", 2, "{", "}", 2],
+      ["", "^", 1, "", " ", 1]
+    ]
+  },
+  "sub2": {
+    "layers": 2,
+    "preLatex": ["\\sum", "\\prod", "\\cup", "\\cap", "\\coprod", "\\int", "\\iint", "\\iiint", "\\iiiint", "\\idotsint", "\\oint", "\\oiint"],
+    "preText": ["sum", "product", "union", "intersection", "coproduct", "integral", "double integral", "triple integral", "quadruple integral", "integral dots integral", "curve integral", "curve double integral"],
+    "latex": "_",
+    "text": "FOR prm0 OF",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [
+      ["{", "}", 1],
+      ["", " ", 1]
+    ]
+  },
+  "sub3": {
+    "layers": 2,
+    "preLatex": ["\\lim", "\\log"],
+    "preText": ["LIMIT", "LOGARITHM BASE"],
+    "latex": "_",
+    "text": "prm0 OF",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [
+      ["{", "}", 2],
+      ["", " ", 1]
+    ]
+  },
+  "function1": {
+    "layers": 2,
+    "preLatex": ["f", "g", "h"],
+    "preText": ["f", "g", "h"],
+    "latex": "(",
+    "text": "OF prm0",
+    "prms": 1,
+    "add_bracket": true,
+    "separation": [
+      ["", ")", 2]
+    ]
+  },
+  "function2": {
+    "layers": 2,
+    "preLatex": ["f", "g", "h"],
+    "preText": ["f", "g", "h"],
+    "latex": "^",
+    "text": "prm0 OF prm1",
+    "prms": 2,
+    "add_bracket": true,
+    "separation": [
+      ["{", "}", 1, "(", ")", 2]
+    ]
+  }
+}
