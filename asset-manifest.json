@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/sumOfSounds/static/css/main.ba152265.chunk.css",
-    "main.js": "/sumOfSounds/static/js/main.106f8db0.chunk.js",
-    "main.js.map": "/sumOfSounds/static/js/main.106f8db0.chunk.js.map",
-    "runtime-main.js": "/sumOfSounds/static/js/runtime-main.2d7339ec.js",
-    "runtime-main.js.map": "/sumOfSounds/static/js/runtime-main.2d7339ec.js.map",
-    "static/css/2.ff97ee80.chunk.css": "/sumOfSounds/static/css/2.ff97ee80.chunk.css",
-    "static/js/2.5ccc7a32.chunk.js": "/sumOfSounds/static/js/2.5ccc7a32.chunk.js",
-    "static/js/2.5ccc7a32.chunk.js.map": "/sumOfSounds/static/js/2.5ccc7a32.chunk.js.map",
+    "main.css": "/sumOfSounds/static/css/main.6726f954.chunk.css",
+    "main.js": "/sumOfSounds/static/js/main.71a83059.chunk.js",
+    "main.js.map": "/sumOfSounds/static/js/main.71a83059.chunk.js.map",
+    "runtime-main.js": "/sumOfSounds/static/js/runtime-main.d680897b.js",
+    "runtime-main.js.map": "/sumOfSounds/static/js/runtime-main.d680897b.js.map",
+    "static/css/2.8190e02f.chunk.css": "/sumOfSounds/static/css/2.8190e02f.chunk.css",
+    "static/js/2.4f484b99.chunk.js": "/sumOfSounds/static/js/2.4f484b99.chunk.js",
+    "static/js/2.4f484b99.chunk.js.map": "/sumOfSounds/static/js/2.4f484b99.chunk.js.map",
     "index.html": "/sumOfSounds/index.html",
-    "precache-manifest.5b423247023d726a11a123b84e62fc65.js": "/sumOfSounds/precache-manifest.5b423247023d726a11a123b84e62fc65.js",
+    "precache-manifest.9edc6686710b38878008fcf8b0e8703e.js": "/sumOfSounds/precache-manifest.9edc6686710b38878008fcf8b0e8703e.js",
     "service-worker.js": "/sumOfSounds/service-worker.js",
-    "static/css/2.ff97ee80.chunk.css.map": "/sumOfSounds/static/css/2.ff97ee80.chunk.css.map",
-    "static/css/main.ba152265.chunk.css.map": "/sumOfSounds/static/css/main.ba152265.chunk.css.map",
+    "static/css/2.8190e02f.chunk.css.map": "/sumOfSounds/static/css/2.8190e02f.chunk.css.map",
+    "static/css/main.6726f954.chunk.css.map": "/sumOfSounds/static/css/main.6726f954.chunk.css.map",
     "static/media/analysis.png": "/sumOfSounds/static/media/analysis.7e426827.png",
     "static/media/avatar.jpg": "/sumOfSounds/static/media/avatar.8eb16382.jpg",
     "static/media/avatar2.jpeg": "/sumOfSounds/static/media/avatar2.45055006.jpeg",
@@ -20,14 +20,15 @@
     "static/media/back.jpg": "/sumOfSounds/static/media/back.48d97c0e.jpg",
     "static/media/semantic.min.css": "/sumOfSounds/static/media/outline-icons.ef60a4f6.woff",
     "static/media/design.png": "/sumOfSounds/static/media/design.b13c8021.png",
+    "static/media/final.png": "/sumOfSounds/static/media/final.75f5d52d.png",
     "static/media/low.png": "/sumOfSounds/static/media/low.5fac8871.png",
     "static/media/specification.png": "/sumOfSounds/static/media/specification.eabf6271.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d7339ec.js",
-    "static/css/2.ff97ee80.chunk.css",
-    "static/js/2.5ccc7a32.chunk.js",
-    "static/css/main.ba152265.chunk.css",
-    "static/js/main.106f8db0.chunk.js"
+    "static/js/runtime-main.d680897b.js",
+    "static/css/2.8190e02f.chunk.css",
+    "static/js/2.4f484b99.chunk.js",
+    "static/css/main.6726f954.chunk.css",
+    "static/js/main.71a83059.chunk.js"
   ]
 }
