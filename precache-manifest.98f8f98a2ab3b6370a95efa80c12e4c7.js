@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ed44f69968881da35ce2992f992d568",
+    "revision": "c3d87412472e72a58cbedd496f1f45bf",
     "url": "/sumOfSounds/index.html"
   },
   {
-    "revision": "6e0cad3f4cc16fba0170",
+    "revision": "618c87bfbf7f0270907f",
     "url": "/sumOfSounds/static/css/2.a44128ec.chunk.css"
   },
   {
-    "revision": "b5220b6cb89ed7af9d7d",
+    "revision": "b4caa0d8d855c4d42130",
     "url": "/sumOfSounds/static/css/main.ea710a08.chunk.css"
   },
   {
-    "revision": "6e0cad3f4cc16fba0170",
-    "url": "/sumOfSounds/static/js/2.0882db3d.chunk.js"
+    "revision": "618c87bfbf7f0270907f",
+    "url": "/sumOfSounds/static/js/2.ba976c79.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/sumOfSounds/static/js/2.0882db3d.chunk.js.LICENSE.txt"
+    "url": "/sumOfSounds/static/js/2.ba976c79.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5220b6cb89ed7af9d7d",
-    "url": "/sumOfSounds/static/js/main.cb9d9cab.chunk.js"
+    "revision": "b4caa0d8d855c4d42130",
+    "url": "/sumOfSounds/static/js/main.4b60823d.chunk.js"
   },
   {
     "revision": "08d53fe5d8eeeb37c221",
@@ -102,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5fac8871151b73f489e064041a80b537",
     "url": "/sumOfSounds/static/media/low.5fac8871.png"
+  },
+  {
+    "revision": "e6b88d509dc331e711839f0880a12bbb",
+    "url": "/sumOfSounds/static/media/manual.e6b88d50.png"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
