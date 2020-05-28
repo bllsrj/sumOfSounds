@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/sumOfSounds/static/css/main.ea710a08.chunk.css",
+    "main.js": "/sumOfSounds/static/js/main.b002da47.chunk.js",
+    "main.js.map": "/sumOfSounds/static/js/main.b002da47.chunk.js.map",
+    "runtime-main.js": "/sumOfSounds/static/js/runtime-main.3ba5ba95.js",
+    "runtime-main.js.map": "/sumOfSounds/static/js/runtime-main.3ba5ba95.js.map",
+    "static/css/2.a44128ec.chunk.css": "/sumOfSounds/static/css/2.a44128ec.chunk.css",
+    "static/js/2.ba976c79.chunk.js": "/sumOfSounds/static/js/2.ba976c79.chunk.js",
+    "static/js/2.ba976c79.chunk.js.map": "/sumOfSounds/static/js/2.ba976c79.chunk.js.map",
+    "index.html": "/sumOfSounds/index.html",
+    "precache-manifest.eb999e3d494aa031d36d4cff32b75e74.js": "/sumOfSounds/precache-manifest.eb999e3d494aa031d36d4cff32b75e74.js",
+    "service-worker.js": "/sumOfSounds/service-worker.js",
+    "static/css/2.a44128ec.chunk.css.map": "/sumOfSounds/static/css/2.a44128ec.chunk.css.map",
+    "static/css/main.ea710a08.chunk.css.map": "/sumOfSounds/static/css/main.ea710a08.chunk.css.map",
+    "static/js/2.ba976c79.chunk.js.LICENSE.txt": "/sumOfSounds/static/js/2.ba976c79.chunk.js.LICENSE.txt",
+    "static/media/analysis.png": "/sumOfSounds/static/media/analysis.7e426827.png",
+    "static/media/avatar.jpg": "/sumOfSounds/static/media/avatar.8eb16382.jpg",
+    "static/media/avatar2.jpeg": "/sumOfSounds/static/media/avatar2.45055006.jpeg",
+    "static/media/avatar3.jpg": "/sumOfSounds/static/media/avatar3.5d2bc2f7.jpg",
+    "static/media/back.jpg": "/sumOfSounds/static/media/back.48d97c0e.jpg",
+    "static/media/semantic.min.css": "/sumOfSounds/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/design.png": "/sumOfSounds/static/media/design.b13c8021.png",
+    "static/media/final.png": "/sumOfSounds/static/media/final.75f5d52d.png",
+    "static/media/low.png": "/sumOfSounds/static/media/low.5fac8871.png",
+    "static/media/manual.png": "/sumOfSounds/static/media/manual.e6b88d50.png",
+    "static/media/specification.png": "/sumOfSounds/static/media/specification.eabf6271.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ba5ba95.js",
+    "static/css/2.a44128ec.chunk.css",
+    "static/js/2.ba976c79.chunk.js",
+    "static/css/main.ea710a08.chunk.css",
+    "static/js/main.b002da47.chunk.js"
+  ]
+}
