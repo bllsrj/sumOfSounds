@@ -7,8 +7,6 @@ import Settings from "../Components/Settings";
 import PageHeader from "../Components/Header";
 import axios from 'axios';
 
-import env from "./../Assets/env"
-
 class AppHome extends Component {
 
     constructor(props) {
@@ -20,13 +18,14 @@ class AppHome extends Component {
             theme: this.props.theme,
             isSettingsPage: 0,
             audioSpeed: 1.0,
-            speaker: 'en-US-Standard-B',
+            speaker: 'en-US-Wavenet-E',
             gender: 'FEMALE',
             fileName: null,
             pageNo: null,
             inputType: null,
             text: null,
             audio: null,
+            statusText: ""
         };
     }
 
@@ -35,35 +34,23 @@ class AppHome extends Component {
     };
 
     async generate() {
-        // Call our fetch function below once the component mounts
+
+        const { inputType, text, pageNo, gender, speaker, audioSpeed, fileName } = this.state;
+
         this.setState({
             uploadStatus: "generate",
         });
 
         if(this.state.inputType !== "text") {
-            await axios.post("http://" + env.url + "/upload", this.state.dataFile, {})
-                .then(res => { // then print response status
-                    console.log(res.statusText)
+            await axios.post("/upload", this.state.dataFile, {})
+                .then(res => {
+                    console.log("Uploaded");
+                    console.log(res);
                 });
         }
 
-        this.callBackendAPI()
-            .then(res =>
-                this.setState({
-                    outputText: res.text,
-                    status: res.status,
-                    uploadStatus: "done",
-                }))
-            .catch(err => console.log(err));
-    }
-
-    callBackendAPI = async () => {
-        const { inputType, text, pageNo, gender, speaker, audioSpeed, fileName } = this.state;
-
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
+        try {
+            const requestOptions = {
                 inputType: inputType,
                 inputString: text,
                 pageNo: pageNo,
@@ -71,30 +58,43 @@ class AppHome extends Component {
                 fileName: fileName,
                 speaker: speaker,
                 gender: gender,
-            })
-        };
+            };
 
-        const response = await fetch('/api/generate', requestOptions);
-        const body = await response.json();
+            await axios.post("/api/generate", requestOptions, {})
+                .then(async res => {
 
-        if (response.status !== 200) {
-            throw Error(body.message)
+                    console.log(res);
+
+                    await axios.post('/output', {file: "output.mp3"},{responseType:'blob'})
+                        .then(out => {
+
+                        const url = window.URL.createObjectURL(new Blob([out.data]));
+                        console.log(out);
+                        console.log(url);
+                        this.setState({
+                            audio: url,
+                            outputText: res.data.text,
+                            status: res.data.msg,
+                            statusText: res.data.msgText,
+                            uploadStatus: "done",
+                        });
+                    });
+                });
+        } catch (error) {
+            this.setState({
+                outputText: null,
+                status: "Error",
+                statusText: "Unexpected error while generating!",
+                uploadStatus: "done",
+            });
         }
-        
-        const res = await fetch("/output.mp3");
-
-        this.setState({
-            audio: res.url
-        });
-
-        return body;
-    };
+    }
 
     handleItemClick = (e, { value }) => this.setState({ activeItem: value });
 
     render() {
 
-        const { activeItem, uploadStatus, theme, isSettingsPage, gender, audioSpeed, speaker, audio, status } = this.state;
+        const { activeItem, uploadStatus, theme, isSettingsPage, gender, audioSpeed, speaker, audio, status, statusText } = this.state;
 
         return (
             <div>
@@ -140,7 +140,7 @@ class AppHome extends Component {
                                     </div>
                                 </Segment>
 
-                                <Segment basic color={theme} style={{marginBottom: 125}}>
+                                <Segment basic color={theme} style={{marginBottom: 40}}>
 
                                     {uploadStatus !== 'none' ?
                                         <Divider horizontal>
@@ -175,7 +175,7 @@ class AppHome extends Component {
                                             negative
                                         >
                                             <Icon name='stop circle' />
-                                            The application could not read the file. Try it again.
+                                            {statusText}
                                         </Message>
                                         : null }
 
@@ -185,7 +185,7 @@ class AppHome extends Component {
                                             color={theme}
                                         >
                                             <Icon name='help' />
-                                            The audio file successfully generated.
+                                            {statusText}
                                         </Message>
                                         : null
                                     }

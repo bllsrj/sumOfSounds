@@ -7,38 +7,40 @@ const base64image = require('base64-image-encoder');
 // To convert PDF to PNG
 // PDF file must be in initialDir directory
 // Images of all pages written to ./png-outputs/ directory
-function convertPDF(initialDir, pageNo){
-    const pdf2pic = new PDF2Pic({
-        density: 100,           // output pixels per inch
-        savename: "output.png",   // output file name
-        savedir: "./png-outputs/",    // output file location
-        format: "png",          // output file format
-        size: "600x600"         // output size in pixels
-    });
+async function convertPDF(initialDir, pageNo){
 
     try{
-        pdf2pic.convertBulk(initialDir, [pageNo]).then((resolve) => {
-            console.log("image converter successfully!");
+        const pdf2pic = await new PDF2Pic({
+            density: 110,           // output pixels per inch
+            savename: "output",   // output file name
+            savedir: "./png-outputs/",    // output file location
+            format: "png",          // output file format
+            size: "900x1280"         // output size in pixels
+        });
+
+        await pdf2pic.convertBulk(initialDir, [pageNo]).then((resolve) => {
+            console.log("image converted successfully!");
             return resolve;
         });
     } catch(error){
-        console.log("failed");
+        return false;
     }
 }
 
 async function convertToBase64(initialDir) {
     return "data:image/jpeg;base64," + await base64image(initialDir);
 }
+
 //Do whatever with the MathPix output in the callbackUp function
-function convertImage(base64, callbackUp){
+async function convertImage(base64, callbackUp){
 
     const options = {
         url: 'https://api.mathpix.com/v3/text',
         json: true,
         headers: {
             "content-type": "application/json",
-            "app_id": "apiID",
-            "app_key": "appKey
+            "app_id": "appID",
+            "app_key": "appKey"
         },
         body: {
             "src": base64,

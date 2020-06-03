@@ -7,20 +7,15 @@ const btnStyle = {
 };
 
 const speakers = [
-    { key: 'en-US-Standard-B', text: 'en-US-Standard-B', value: 'en-US-Standard-B' },
-    { key: 'en-US-Standard-C', text: 'en-US-Standard-C', value: 'en-US-Standard-C' },
-    { key: 'en-US-Standard-D', text: 'en-US-Standard-D', value: 'en-US-Standard-D' },
-    { key: 'en-US-Wavenet-A', text: 'en-US-Wavenet-A', value: 'en-US-Wavenet-A' },
-    { key: 'en-US-Wavenet-B', text: 'en-US-Wavenet-B', value: 'en-US-Wavenet-B' },
-    { key: 'en-US-Wavenet-C', text: 'en-US-Wavenet-C', value: 'en-US-Wavenet-C' },
-    { key: 'en-US-Wavenet-D', text: 'en-US-Wavenet-D', value: 'en-US-Wavenet-D' },
-    { key: 'en-US-Wavenet-E', text: 'en-US-Wavenet-E', value: 'en-US-Wavenet-E' },
-    { key: 'en-US-Wavenet-F', text: 'en-US-Wavenet-F', value: 'en-US-Wavenet-F' },
-];
+    { key: 'en-AU-Wavenet-A', text: 'Australia/Female', value: 'en-AU-Wavenet-A' },
+    { key: 'en-AU-Wavenet-D', text: 'Australia/Male', value: 'en-AU-Wavenet-D' },
+    { key: 'en-IN-Wavenet-D', text: 'India/Female', value: 'en-IN-Wavenet-D' },
+    { key: 'en-IN-Wavenet-B', text: 'India/Male', value: 'en-IN-Wavenet-B' },
+    { key: 'en-GB-Wavenet-C', text: 'UK/Female', value: 'en-GB-Wavenet-C' },
+    { key: 'en-GB-Wavenet-D', text: 'UK/Male', value: 'en-GB-Wavenet-D' },
+    { key: 'en-US-Wavenet-E', text: 'USA/Female', value: 'en-US-Wavenet-E' },
+    { key: 'en-US-Wavenet-D', text: 'USA/Male', value: 'en-US-Wavenet-D' },
 
-const genders = [
-    { key: 'MALE', text: 'MALE', value: 'MALE' },
-    { key: 'FEMALE', text: 'FEMALE', value: 'FEMALE' },
 ];
 
 const themes = [
@@ -82,7 +77,7 @@ class AppHome extends Component {
 
     render() {
 
-        const { audioSpeed, speaker, pitch, theme, gender, sliderSpeed} = this.state;
+        const { audioSpeed, speaker, pitch, theme, sliderSpeed} = this.state;
 
         return (
             <div>
@@ -95,7 +90,7 @@ class AppHome extends Component {
                 >
                     <Form>
                         <label>
-                            Audio speed: {audioSpeed}
+                            <b>Audio speed: {audioSpeed}</b>
                         </label>
                         <Slider
                             style={{color: theme}}
@@ -107,16 +102,11 @@ class AppHome extends Component {
                             aria-labelledby="continuous-slider"
                         />
 
-                        <label>
-                            Pitch: {pitch}
-                        </label>
-
                         <Form.Dropdown fluid selection
                                        name="speaker"
                                        label="Speaker"
                                        options={speakers}
-                                       selectedLabel={speaker}
-                                       placeholder={speaker}
+                                       value={speaker}
                                        onChange={this.handleSelect}
                         />
 

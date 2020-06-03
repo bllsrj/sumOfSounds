@@ -1,0 +1,3 @@
+\frac{d v}{d t}-\frac{3}{x} y^{2}=4 x \\
+v=y^{2} \\
+\frac{d v}{d t}-\frac{3}{x} v=4 x \quad \text { Substitute } v \text { for } y^{2}

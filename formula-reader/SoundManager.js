@@ -4,6 +4,7 @@ const textToSpeech = require('@google-cloud/text-to-speech');
 // Import other required libraries
 const fs = require('fs');
 const util = require('util');
+const path = require('path');
 
 /*
 input is JSON, must contain the following:
@@ -31,7 +32,7 @@ async function generateMP3(input){
     const [response] = await client.synthesizeSpeech(request);
     // Write the binary audio content to a local file
     const writeFile = util.promisify(fs.writeFile);
-    await writeFile('./mp3-outputs/output.mp3', response.audioContent, 'binary');
+    await writeFile(path.join(__dirname, "mp3-outputs", "output.mp3"), response.audioContent);
     console.log('Audio content written to file: output.mp3');
     // return response.audioContent;
 }

@@ -4,12 +4,7 @@
   "description": "Voices the formulas",
   "main": "./client/src/App.js",
   "author": "tkas9mbek <kasymbek.rustambekovich@gmail.com>",
-  "license": "MIT",
   "private": false,
-  "engines": {
-    "node": "12.10.0",
-    "yarn": "1.17.3"
-  },
   "keywords": [
     "sum of sounds",
     "heroku"
@@ -17,7 +12,7 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "dev": "set GOOGLE_APPLICATION_CREDENTIALS=%cd%\\auth\\SumOfSounds-a3bf5c0a2814.json&& concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
@@ -27,6 +22,7 @@
     "body-parser": "^1.19.0",
     "concurrently": "^5.1.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "filereader": "^0.10.3",
     "fs": "^0.0.1-security",

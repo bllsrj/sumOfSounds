@@ -1,4 +1,28 @@
 {
+  "display": {
+    "layers": 1,
+    "latex": "\\mathrm",
+    "text": "prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "display2": {
+    "layers": 1,
+    "latex": "\\mathbf",
+    "text": "prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
+  "set": {
+    "layers": 1,
+    "latex": "\\mathbb",
+    "text": "\\prm0",
+    "prms": 1,
+    "add_bracket": false,
+    "separation": [["{", "}", 1]]
+  },
   "fraction": {
     "layers": 1,
     "latex": "\\frac",
@@ -149,22 +173,6 @@
     "text": "BRACE UNDER prm0",
     "prms": 1,
     "add_bracket": true,
-    "separation": [["{", "}", 1]]
-  },
-  "display": {
-    "layers": 1,
-    "latex": "\\mathrm",
-    "text": "prm0",
-    "prms": 1,
-    "add_bracket": false,
-    "separation": [["{", "}", 1]]
-  },
-  "set": {
-    "layers": 1,
-    "latex": "\\mathbb",
-    "text": "\\prm0",
-    "prms": 1,
-    "add_bracket": false,
     "separation": [["{", "}", 1]]
   },
   "text": {

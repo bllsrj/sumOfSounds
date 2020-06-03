@@ -20,10 +20,10 @@ import analysis from "../Images/analysis.png";
 import design from "../Images/design.png";
 import low from "../Images/low.png";
 import final from "../Images/final.png";
+import manual from "../Images/manual.png";
 import avatar1 from "../Images/avatar.jpg";
 import avatar2 from "../Images/avatar2.jpeg";
 import avatar3 from "../Images/avatar3.jpg";
-
 
 export default class MainPage extends React.Component {
 
@@ -130,7 +130,7 @@ export default class MainPage extends React.Component {
                                     <Header as='h1'>REPORTS</Header>
                                 </Divider>
 
-                                <Grid columns={5} divided>
+                                <Grid columns={3} divided>
                                     <Grid.Row>
                                         <Grid.Column
                                             className="cursor"
@@ -154,6 +154,10 @@ export default class MainPage extends React.Component {
                                             <Image src={design} size="massive"/>
                                             <Container fluid className="c9-text-png" content="High-level design Report"/>
                                         </Grid.Column>
+                                    </Grid.Row>
+                                </Grid>
+                                <Grid columns={3} divided>
+                                    <Grid.Row>
                                         <Grid.Column
                                             className="cursor"
                                             onClick={()=> window.open("https://github.com/bilalsiraj/sumOfSounds/blob/master/Reports/Low-Level%20Design%20Report.pdf", "_blank")}
@@ -167,6 +171,13 @@ export default class MainPage extends React.Component {
                                         >
                                             <Image src={final} size="massive"/>
                                             <Container fluid className="c9-text-png" content="Final Report"/>
+                                        </Grid.Column>
+                                        <Grid.Column
+                                            className="cursor"
+                                            onClick={()=> window.open("https://github.com/bilalsiraj/sumOfSounds/blob/master/Reports/user_manual.pdf", "_blank")}
+                                        >
+                                            <Image src={manual} size="massive"/>
+                                            <Container fluid className="c9-text-png" content="User Manual"/>
                                         </Grid.Column>
                                     </Grid.Row>
                                 </Grid>

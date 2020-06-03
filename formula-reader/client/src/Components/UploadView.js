@@ -15,6 +15,7 @@ export default class UploadView extends React.Component {
             type: null,
             OKType: 2,
             pageNo: 1,
+            size: 0,
         };
 
         this.onChangeHandler = this.onChangeHandler.bind(this);
@@ -32,8 +33,19 @@ export default class UploadView extends React.Component {
 
         if(event.target.files.length > 0) {
             let type = event.target.files[0].type;
+
             if (event.target.files[0].name.substr(event.target.files[0].name.length - 3) === "tex") {
                 type = "tex";
+            }
+
+            if(type === "image/jpg" || type === "image/png" || type === "image/jpeg") {
+                this.setState({
+                    size: event.target.files[0].size,
+                })
+            } else {
+                this.setState({
+                    size: 0,
+                })
             }
 
             this.setState({
@@ -59,7 +71,7 @@ export default class UploadView extends React.Component {
 
     render(){
 
-        const {type, OKType, theme, pageNo } = this.state;
+        const {type, OKType, theme, pageNo, size } = this.state;
 
         return (
 
@@ -71,7 +83,7 @@ export default class UploadView extends React.Component {
                         negative
                     >
                         <Icon name='stop circle' />
-                        "{type}" is not supported. Please upload only pdf, jpeg, png or tex files.
+                        "{type}" is not supported. Please upload only pdf, jpeg, jpg, png or tex files.
                     </Message>
                     :
                     <Message
@@ -79,8 +91,20 @@ export default class UploadView extends React.Component {
                         color={theme}
                     >
                         <Icon name='help' />
-                        The following file types are supported: pdf, jpeg, png, tex.
+                        The following file types are supported: pdf, jpeg, jpg, png, tex.
                     </Message>
+                }
+
+                {size >= 102400 ?
+                    <Message
+                        style={{width: "95%",  margin: "0 1% 3% 2%"}}
+                        negative
+                    >
+                        <Icon name='stop circle' />
+                        File size is {size} Bytes. Please upload file with size less than 102400 Bytes.
+                    </Message>
+                    :
+                    null
                 }
 
                 <Form size='large' style={{margin: "1%"}}>
@@ -114,7 +138,7 @@ export default class UploadView extends React.Component {
                     style={{margin: "1%", width: "50%"}}
                     icon="upload"
                     label='Upload'
-                    disabled={OKType !== 1 || pageNo === null || pageNo < 1}
+                    disabled={OKType !== 1 || pageNo === null || pageNo < 1 || size >= 102400}
                     color={theme}
                     onClick={ this.onClickHandler }
                 />

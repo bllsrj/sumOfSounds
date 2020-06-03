@@ -14,7 +14,7 @@ const openingBrackets = new Set(["{", "("]);
 const closingBrackets = new Set(["}", ")"]);
 const wordset = initializeWordBag();
 
-const extraLstr = new Set(["&","\\label", "\\displaystyle", "\\textstyle", "\\scriptstyle", "\\begin{align}", "\\end{align}", "\\begin{equation}", "\\end{equation}", "{equation}", "{align}", "\\begin{aligned}", "\\end{aligned}", "\\rm"]);
+const extraLstr = new Set(["&","\\label", "\\displaystyle", "\\textstyle", "\\scriptstyle", "\\begin{align}", "\\end{align}", "\\begin{equation}", "\\end{equation}", "{equation}", "{align}", "\\begin{aligned}", "\\end{aligned}", "\\rm", "\\(", "\\)"]);
 
 
 // functions
