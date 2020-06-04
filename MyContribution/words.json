@@ -1,0 +1,9 @@
+{
+  "&=": "equals",
+  "pmatrix": "matrix",
+  "bmatrix": "matrix",
+  "Bmatrix": "matrix",
+  "vmatrix": "matrix",
+  "Vmatrix": "matrix",
+  "smallmatrix": "matrix"
+}
