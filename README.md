@@ -16,4 +16,4 @@ There is a lot of text to speech applications on the market now such as an Intel
 
 This application will prove beneficial to the scientific community especially blind professors, students, and research scientists. Below is an example of a potential user sharing his plight online.
 
-![Image of Professor's Post](https://github.com/bilalsiraj/sumOfSounds/blob/master/conception.png)
+![Image of Professor's Post](https://github.com/bllsrj/sumOfSounds/blob/master/conception.png)
