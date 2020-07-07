@@ -1,7 +1,5 @@
 # SumOfSounds
 
-https://bilalsiraj.github.io/sumOfSounds/
-
 Members of the Team:
 
 * Kasymbek Tashbaev
